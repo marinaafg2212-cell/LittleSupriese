@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bashir.exe — A Teacher's Legacy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <!-- ================= PRELOADER ================= -->
+
+    <div class="preloader" id="preloader">
+
+        <div class="loader-logo">
+            <span>B</span>
+        </div>
+
+        <div class="loader-text">
+            <span id="loadingText">Preparing something special...</span>
+        </div>
+
+        <div class="loader-line">
+            <span id="loaderProgress"></span>
+        </div>
+
+        <div class="loader-percent">
+            <span id="loaderNumber">0</span>%
+        </div>
+
+    </div>
+
+
+    <!-- ================= CUSTOM CURSOR ================= -->
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <div class="background">
+
+        <div class="gradient gradient-one"></div>
+        <div class="gradient gradient-two"></div>
+
+        <div class="grid"></div>
+
+        <canvas id="particles"></canvas>
+
+    </div>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-box">B</span>
+            <span>BASHIR<span class="dot">.</span>EXE</span>
+        </div>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+           <a href="indext.html">Play Game</a>
+        </div>
+
+      
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-left">
+
+                <div class="eyebrow">
+                    <span>01</span>
+                    A DIGITAL TRIBUTE
+                </div>
+
+                <h1>
+                    Some people
+                    <span>teach.</span>
+                    <br>
+                    Some people
+                    <span>inspire.</span>
+                </h1>
+
+                <p class="hero-description">
+                    This is a small digital experience created
+                    for someone whose lessons go far beyond
+                    the classroom.
+                </p>
+
+                <button class="enter-btn" id="enterBtn">
+
+                    <span class="btn-text">
+                        <a href="indext.html">Simple Gime</a>
+                    </span>
+
+                    <span class="btn-arrow">↗</span>
+
+                </button>
+
+            </div>
+
+
+            <div class="hero-right">
+
+                <div class="orb-container">
+
+                    <div class="orb-ring ring-one"></div>
+                    <div class="orb-ring ring-two"></div>
+                    <div class="orb-ring ring-three"></div>
+
+                    <div class="orb">
+
+                        <span class="orb-letter">B</span>
+
+                    </div>
+
+                    <div class="orb-label label-top">
+                        KNOWLEDGE
+                    </div>
+
+                    <div class="orb-label label-right">
+                        IMPACT
+                    </div>
+
+                    <div class="orb-label label-bottom">
+                        INSPIRATION
+                    </div>
+
+                    <div class="orb-label label-left">
+                        LEGACY
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-line"></div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= ARCHITECT ================= -->
+
+        <section class="architect section">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    <span>02</span>
+                    THE ARCHITECT
+                </div>
+
+                <h2>
+                    Behind every
+                    <em>great developer</em>
+                    is a mind that never stopped learning.
+                </h2>
+
+            </div>
+
+
+            <div class="architect-grid">
+
+                <div class="architect-intro">
+
+                    <div class="number-big">
+                        01
+                    </div>
+
+                    <p>
+                        Meet the person at the center
+                        of this experience.
+                    </p>
+
+                </div>
+
+
+                <div class="name-card">
+
+                    <div class="card-top">
+                        <span>FULL-STACK DEVELOPER</span>
+                        <span>●</span>
+                    </div>
+
+                    <div class="name">
+                        BASHIR<br>
+                        <span>HUSSAIN</span><br>
+                        EBRAHIMI
+                    </div>
+
+                    <div class="card-bottom">
+                        <span>TEACHER</span>
+                        <span>MENTOR</span>
+                        <span>BUILDER</span>
+                    </div>
+
+                </div>
+
+
+                <div class="quote-card">
+
+                    <span class="quote-mark">“</span>
+
+                    <p>
+                        Great teachers don't simply
+                        give answers. They teach us
+                        how to find them.
+                    </p>
+
+                    <span class="quote-line"></span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CODE ================= -->
+
+        <section class="code-section section">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    <span>03</span>
+                    THE CODE
+                </div>
+
+                <h2>
+                    If gratitude
+                    were a program...
+                </h2>
+
+            </div>
+
+
+            <div class="code-stage">
+
+                <div class="code-window">
+
+                    <div class="window-header">
+
+                        <div class="window-dots">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+
+                        <span>teacher.js</span>
+
+                        <span class="window-language">
+                            JavaScript
+                        </span>
+
+                    </div>
+
+
+                    <div class="code-body">
+
+                        <div class="line">
+                            <span class="line-number">01</span>
+                            <span>
+                                <b class="purple">class</b>
+                                <b class="yellow">Teacher</b>
+                                {
+                            </span>
+                        </div>
+
+                        <div class="line">
+                            <span class="line-number">02</span>
+                            <span class="indent">
+                                <b class="purple">constructor</b>
+                                (<b class="orange">name</b>) {
+                            </span>
+                        </div>
+
+                        <div class="line">
+                            <span class="line-number">03</span>
+                            <span class="indent-two">
+                                <b class="blue">this</b>.name =
+                                <b class="green">name</b>;
+                            </span>
+                        </div>
+
+                        <div class="line">
+                            <span class="line-number">04</span>
+                            <span class="indent-two">
+                                <b class="blue">this</b>.knowledge =
+                                <b class="pink">Infinity</b>;
+                            </span>
+                        </div>
+
+                        <div class="line">
+                            <span class="line-number">05</span>
+                            <span class="indent-two">
+                                <b class="blue">this</b>.impact =
+                                <b class="green">"Limitless"</b>;
+                            </span>
+                        </div>
+
+                        <div class="line">
+                            <span class="line-number">06</span>
+                            <span class="indent">
+                                }
+                            </span>
+                        </div>
+
+                        <div class="line">
+                            <span class="line-number">07</span>
+                            <span class="indent">
+                                <b class="purple">inspire</b>() {
+                            </span>
+                        </div>
+
+                        <div class="line">
+                            <span class="line-number">08</span>
+                            <span class="indent-two">
+                                <b class="purple">return</b>
+                                <b class="green">
+                                    "Keep learning."
+                                </b>;
+                            </span>
+                        </div>
+
+                        <div class="line">
+                            <span class="line-number">09</span>
+                            <span class="indent">
+                                }
+                            </span>
+                        </div>
+
+                        <div class="line">
+                            <span class="line-number">10</span>
+                            <span>
+                                }
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="code-footer">
+
+                        <span>
+                            ● Ready
+                        </span>
+
+                        <button id="runCode">
+                            RUN MESSAGE ▶
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="code-output" id="codeOutput">
+
+                    <div class="output-title">
+                        OUTPUT
+                    </div>
+
+                    <div id="outputContent">
+
+                        <span>Waiting for execution...</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= IMPACT ================= -->
+
+        <section class="impact section">
+
+            <div class="section-heading centered">
+
+                <div class="eyebrow">
+                    <span>04</span>
+                    THE IMPACT
+                </div>
+
+                <h2>
+                    More than knowledge.
+                    <br>
+                    <em>It's influence.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="impact-network">
+
+                <div class="connection c1"></div>
+                <div class="connection c2"></div>
+                <div class="connection c3"></div>
+                <div class="connection c4"></div>
+                <div class="connection c5"></div>
+
+                <div class="impact-center">
+                    <span>B</span>
+                    <small>IMPACT</small>
+                </div>
+
+
+                <button class="impact-node node-one">
+                    KNOWLEDGE
+                </button>
+
+                <button class="impact-node node-two">
+                    PATIENCE
+                </button>
+
+                <button class="impact-node node-three">
+                    GUIDANCE
+                </button>
+
+                <button class="impact-node node-four">
+                    CREATIVITY
+                </button>
+
+                <button class="impact-node node-five">
+                    CONFIDENCE
+                </button>
+
+            </div>
+
+            <p class="impact-hint">
+                Click the nodes.
+            </p>
+
+            <div class="node-message" id="nodeMessage">
+                <span></span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SECRET ================= -->
+
+        <section class="secret section">
+
+            <div class="secret-box">
+
+                <div class="lock">
+                    🔒
+                </div>
+
+                <div class="eyebrow">
+                    05 · SOMETHING HIDDEN
+                </div>
+
+                <h2>
+                    Not everything
+                    <br>
+                    should be obvious.
+                </h2>
+
+                <p>
+                    Some things are meant to be discovered.
+                </p>
+
+                <button id="secretBtn">
+                    UNLOCK
+                </button>
+
+                <div class="secret-result" id="secretResult">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FINAL ================= -->
+
+        <section class="final section">
+
+            <div class="final-content">
+
+                <div class="final-small">
+                    THE FINAL MESSAGE
+                </div>
+
+                <h2>
+                    Every developer
+                    <br>
+                    writes code.
+                </h2>
+
+                <div class="final-line"></div>
+
+                <h3>
+                    But only a few
+                    <br>
+                    write something
+                    <em>into people's lives.</em>
+                </h3>
+
+                <div class="thank-you">
+
+                    <span>THANK YOU</span>
+
+                    <p>
+                        For building more than code.
+                    </p>
+
+                </div>
+
+                <div class="final-name">
+                    BASHIR HUSSAIN EBRAHIMI
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TEACHER DAY ================= -->
+
+        <section class="celebration">
+
+            <div class="celebration-glow"></div>
+
+            <div class="celebration-content">
+
+                <div class="sparkle">✦</div>
+
+                <p>
+                    WITH RESPECT & GRATITUDE
+                </p>
+
+                <h1>
+                    HAPPY
+                    <span>TEACHER'S DAY</span>
+                </h1>
+
+                <div class="signature">
+                    Bashir Hussain Ebrahimi
+                </div>
+
+                <button class="replay" id="replay">
+                    ↻ REPLAY EXPERIENCE
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= MENU ================= -->
+
+    <div class="menu-overlay" id="menuOverlay">
+
+        <button class="close-menu" id="closeMenu">
+            ×
+        </button>
+
+        <nav>
+
+            <a href="#architect">01 — THE ARCHITECT</a>
+            <a href="#code">02 — THE CODE</a>
+            <a href="#impact">03 — THE IMPACT</a>
+            <a href="#secret">04 — SECRET</a>
+            <a href="#final">05 — THE MESSAGE</a>
+
+        </nav>
+
+    </div>
+
+
+    <script src="script1.js"></script>
+
+</body>
+</html>

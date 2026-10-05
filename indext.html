@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mentor Protocol | Bashir Hussain Ebrahimi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+  <!-- ================= CUSTOM CURSOR ================= -->
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+
+<!-- ================================
+     TOP BAR
+================================ -->
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            <span>&lt;</span>
+            <span>/</span>
+            <span>&gt;</span>
+        </div>
+
+        <div>
+            <small>MENTOR</small>
+            <strong>PROTOCOL</strong>
+        </div>
+
+    </div>
+
+
+    <div class="mission-status">
+
+        <span class="status-dot"></span>
+
+        SYSTEM ONLINE
+
+    </div>
+
+
+    <button
+        class="music-button"
+        id="musicButton"
+        type="button"
+    >
+
+        <i class="fa-solid fa-volume-xmark"></i>
+
+        <span>MUSIC</span>
+
+    </button>
+
+</header>
+
+
+
+<!-- ================================
+     INTRO
+================================ -->
+
+<section class="intro-screen" id="introScreen">
+
+    <div class="intro-grid"></div>
+
+    <div class="intro-content">
+
+        <div class="mission-label">
+
+            <span></span>
+
+            SPECIAL TRANSMISSION // 2026
+
+            <span></span>
+
+        </div>
+
+
+        <div class="hero-symbol">
+
+            <div class="symbol-ring ring-one"></div>
+            <div class="symbol-ring ring-two"></div>
+
+            <span>&lt;/&gt;</span>
+
+        </div>
+
+
+        <p class="system-text">
+            AN UNUSUAL MESSAGE HAS BEEN DETECTED
+        </p>
+
+
+        <h1>
+
+            THE
+            <span>MENTOR</span>
+            PROTOCOL
+
+        </h1>
+
+
+        <p class="intro-description">
+
+            A small interactive experience created
+            for someone who turned lines of code
+            into lessons, ideas, and possibilities.
+
+        </p>
+
+
+        <div class="target">
+
+            <small>TARGET IDENTIFIED</small>
+
+            <strong>
+                BASHIR HUSSAIN EBRAHIMI
+            </strong>
+
+            <span>
+                PROGRAMMING INSTRUCTOR
+            </span>
+
+        </div>
+
+
+        <button
+            class="mission-button"
+            id="startMission"
+            type="button"
+        >
+
+            <span>START MISSION</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+        <div class="keyboard-hint">
+
+            PRESS ENTER TO INITIALIZE
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     GAME HEADER
+================================ -->
+
+<main id="game" class="game hidden">
+
+    <section class="game-header">
+
+        <div>
+
+            <small>
+                MENTOR PROTOCOL / ACTIVE
+            </small>
+
+            <h2>
+                Mission:
+                <span>Thank Your Mentor</span>
+            </h2>
+
+        </div>
+
+
+        <div class="level-box">
+
+            <span>LEVEL</span>
+
+            <strong id="levelNumber">
+                01
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROGRESS -->
+
+    <div class="progress-wrapper">
+
+        <div class="progress-info">
+
+            <span>
+                MISSION PROGRESS
+            </span>
+
+            <strong id="progressText">
+                0%
+            </strong>
+
+        </div>
+
+
+        <div class="progress-track">
+
+            <div
+                class="progress-bar"
+                id="progressBar"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================
+         LEVEL 1
+    ================================= -->
+
+    <section
+        class="level active"
+        id="level1"
+    >
+
+        <div class="level-number">
+            01
+        </div>
+
+
+        <div class="level-content">
+
+            <span class="level-tag">
+                INITIALIZE
+            </span>
+
+            <h3>
+                Every great program
+                begins with a first line.
+            </h3>
+
+            <p>
+                Before we reach the final message,
+                we need to initialize the protocol.
+            </p>
+
+
+            <div class="terminal">
+
+                <div class="terminal-top">
+
+                    <div class="terminal-dots">
+
+                        <i></i>
+                        <i></i>
+                        <i></i>
+
+                    </div>
+
+                    <span>
+                        mentor_protocol.js
+                    </span>
+
+                </div>
+
+
+                <div class="terminal-body">
+
+                    <div class="terminal-line">
+
+                        <span class="prompt">
+                            student@future
+                        </span>
+
+                        <span>:</span>
+
+                        <span class="path">
+                            ~/mentor
+                        </span>
+
+                        <span>$</span>
+
+                        <span>
+                            initialize()
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="terminal-output"
+                        id="terminalOutput"
+                    ></div>
+
+
+                    <button
+                        class="execute-button"
+                        id="executeButton"
+                        type="button"
+                    >
+
+                        EXECUTE PROTOCOL
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         LEVEL 2
+    ================================= -->
+
+    <section
+        class="level"
+        id="level2"
+    >
+
+        <div class="level-number">
+            02
+        </div>
+
+
+        <div class="level-content">
+
+            <span class="level-tag">
+                CODE PUZZLE
+            </span>
+
+            <h3>
+                Find the missing line.
+            </h3>
+
+            <p>
+                A good programmer knows how to
+                find what is missing.
+            </p>
+
+
+            <div class="code-puzzle">
+
+<pre>
+const teacher = {
+    name: "Bashir Hussain Ebrahimi",
+    patience: Infinity,
+    knowledge: Infinity,
+    inspiration: <span id="missingValue">?</span>
+};
+</pre>
+
+
+                <div class="puzzle-options">
+
+                    <button
+                        type="button"
+                        data-answer="false"
+                    >
+                        null
+                    </button>
+
+                    <button
+                        type="button"
+                        data-answer="false"
+                    >
+                        undefined
+                    </button>
+
+                    <button
+                        type="button"
+                        data-answer="true"
+                    >
+                        true
+                    </button>
+
+                    <button
+                        type="button"
+                        data-answer="false"
+                    >
+                        0
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="puzzle-message"
+                    id="puzzleMessage"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         LEVEL 3
+    ================================= -->
+
+    <section
+        class="level"
+        id="level3"
+    >
+
+        <div class="level-number">
+            03
+        </div>
+
+
+        <div class="level-content">
+
+            <span class="level-tag">
+                MEMORY CORE
+            </span>
+
+            <h3>
+                What does a teacher leave behind?
+            </h3>
+
+            <p>
+                Choose the three values that
+                should remain in every student's core.
+            </p>
+
+
+            <div class="memory-grid">
+
+                <button
+                    type="button"
+                    class="memory-card"
+                    data-value="knowledge"
+                >
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>KNOWLEDGE</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="memory-card"
+                    data-value="patience"
+                >
+
+                    <i class="fa-solid fa-hourglass-half"></i>
+
+                    <span>PATIENCE</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="memory-card"
+                    data-value="creativity"
+                >
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <span>CREATIVITY</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="memory-card"
+                    data-value="fear"
+                >
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <span>FEAR</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="memory-card"
+                    data-value="confidence"
+                >
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span>CONFIDENCE</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="memory-card"
+                    data-value="doubt"
+                >
+
+                    <i class="fa-solid fa-question"></i>
+
+                    <span>DOUBT</span>
+
+                </button>
+
+            </div>
+
+
+            <button
+                class="continue-button"
+                id="memoryContinue"
+                type="button"
+                disabled
+            >
+
+                VERIFY MEMORY CORE
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         LEVEL 4
+    ================================= -->
+
+    <section
+        class="level"
+        id="level4"
+    >
+
+        <div class="level-number">
+            04
+        </div>
+
+
+        <div class="level-content">
+
+            <span class="level-tag">
+                FINAL ACCESS
+            </span>
+
+            <h3>
+                One last command.
+            </h3>
+
+            <p>
+                Type the command that every student
+                should know how to say.
+            </p>
+
+
+            <div class="final-terminal">
+
+                <div class="command-line">
+
+                    <span>
+                        student@future:~$
+                    </span>
+
+                    <input
+                        id="finalInput"
+                        type="text"
+                        autocomplete="off"
+                        placeholder="type command..."
+                    >
+
+                </div>
+
+
+                <div
+                    class="command-result"
+                    id="commandResult"
+                ></div>
+
+
+                <button
+                    class="unlock-button"
+                    id="unlockButton"
+                    type="button"
+                >
+
+                    UNLOCK FINAL MESSAGE
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         FINAL MESSAGE
+    ================================= -->
+
+    <section
+        class="final-screen"
+        id="finalScreen"
+    >
+
+        <div class="badge">
+
+            <div class="badge-ring">
+
+                <div class="badge-inner">
+                    &lt;/&gt;
+                </div>
+
+            </div>
+
+
+            <span class="badge-label">
+                MENTOR PROTOCOL
+            </span>
+
+        </div>
+
+
+        <p class="final-small">
+            MISSION COMPLETED
+        </p>
+
+
+        <h2>
+            To a teacher who
+            <span>made a difference.</span>
+        </h2>
+
+
+        <div class="teacher-name">
+
+            <small>
+                THE MENTOR
+            </small>
+
+            <strong>
+                Bashir Hussain Ebrahimi
+            </strong>
+
+            <span>
+                Programming Instructor
+            </span>
+
+        </div>
+
+
+        <div class="final-message">
+
+            <p>
+                For every patient explanation,
+                every challenge, every correction,
+                and every time you encouraged us
+                to keep learning.
+            </p>
+
+            <p>
+                Thank you for teaching us more than
+                programming.
+            </p>
+
+            <strong>
+                You taught us how to think.
+            </strong>
+
+        </div>
+
+
+        <div class="signature">
+            With sincere gratitude
+        </div>
+
+
+        <button
+            class="replay-button"
+            id="replayButton"
+            type="button"
+        >
+
+            <i class="fa-solid fa-rotate-right"></i>
+
+            REPLAY EXPERIENCE
+
+        </button>
+
+    </section>
+
+</main>
+
+
+<!-- ================================
+     AUDIO
+================================ -->
+
+<audio
+    id="ambientAudio"
+    loop
+>
+</audio>
+
+
+<script src="script.js"></script>
+<script src="script1.js"></script>
+
+</body>
+</html>
